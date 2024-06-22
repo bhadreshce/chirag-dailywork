@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+ combinator selector 
+    
+ descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+     -->
+
+    <style>
+        /* descendant selector (space) */
+        /* .a h1 {
+            background-color: brown;
+            color: white;
+        } */
+
+        /* child selector (>) */
+        /* .a>h1 {
+            background-color: pink;
+            color: cadetblue;
+        } */
+
+        /* adjacent sibling selector (+) */
+        /* .a+h1 {
+            background-color: chocolate;
+            color: darkmagenta;
+        } */
+        /* general sibling selector (~) */
+        /* .a~h1 {
+            background-color: chocolate;
+            color: darkmagenta;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nam?</h1>
+        <span>
+            <h1>this is inner h1</h1>
+            <h1>this is inner h1</h1>
+            <h1>this is inner h1</h1>
+        </span>
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    </div>
+    <span>Lorem, ipsum dolor.</span>
+    <h1>outer h1</h1>
+    <h1>outer h1 new </h1>
+    <h1>outer h1 secod</h1>
+</body>
+
+</html>
